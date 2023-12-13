@@ -1,41 +1,36 @@
-# Final-Project-Statistical-Modelling-with-Python
+## Final-Project-Statistical-Modelling-with-Python
 
-## Project/Goals
+## 1.Project/Goals
 ### The objective of this project is to create a statistical model using Python. This involves fetching data from City Bikes, Foursquare, and Yelp APIs. A decision is made to choose data from either Yelp or Foursquare, depending on its suitability for a specific point of interest. For City Bikes, the bike station locations are in Toronto. The chosen point of interest data pertains to vegetarian restaurants and libraries around Toronto, gathered from Yelp. The collected information from City Bikes and Yelp is then combined.
-## The subsequent Exploratory Data Analysis (EDA) phase encompasses visually exploring, cleaning, and preparing the data, in addition to conducting hypothesis testing. The ultimate goal of the project is to construct a statistical model that can analyze relationships and make predictions. The emphasis is particularly on understanding the impact of independent variables on the dependent variable.
+#### The subsequent Exploratory Data Analysis (EDA) phase encompasses visually exploring, cleaning, and preparing the data, in addition to conducting hypothesis testing. The ultimate goal of the project is to construct a statistical model that can analyze relationships and make predictions. The emphasis is particularly on understanding the impact of independent variables on the dependent variable.
 
-## Process
+## 2.Process
 ## Part 1
-## 1)Explore API Structure:
-### 1.Investigated the structure of the CityBikes API to understand its components.
-### 2.Executed queries to the API and analyzed the format of the returned data.
-## 2)City Selection and Bike Station Retrieval:
-### 1.Selected a specific city covered by the CityBikes API to focus on.
-### 2.Retrieved information on all available bike stations within the chosen city using the API.
-## 3)Data Extraction for Each Bike Station:
-### For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
-## 4)JSON Parsing into Pandas DataFrame:
-### 1.Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
-### 2. copy the result in a csv file : [Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv)
-### 3.Notebook Completion - [city_bikes.ipynb: Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/67700abee009d9b81651f9aad6379b57959cb47a/Final-Project-statistical-Modelling-with-Python/city_bikes.ipynb)
-## 5)Demonstrated the process of exploring the API, retrieving bike station data, extracting relevant information, and converting it into a Pandas dataframe.
-## Link to the completed notebook demonstrates the above steps : https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
+### 1)Explore API Structure:
+###    Investigated the structure of the CityBikes API to understand its components.
+###    Executed queries to the API and analyzed the format of the returned data.
+### 2)City Selection and Bike Station Retrieval:
+###     Selected a specific city covered by the CityBikes API to focus on.
+###     Retrieved information on all available bike stations within the chosen city using the API.
+###     Data Extraction for Each Bike Station:
+###     For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
+### 3)JSON Parsing into Pandas DataFrame:
+###    Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
+###    copy the result in a csv file : [Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-
+### 4)Link to the completed notebook demonstrates the above steps : https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
 
 
 ## Part 2
-## Connect to Foursquare API and yelp API to extract Data.
-
-## For each of the bike stations in Toronto from Part 1, query both APIs to retrieve information for vegeratian restaurants and Libraries 
-
-## Created a DataFrame for Yelp results and Foursquare results and store this in csv files. 
-    YELP : [Final-Project-statistical-Modelling-with-Python/yelp.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/yelp.csv)
-    FOURSQUARE:https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/foursquare.csv
-
-## Compared the quality of the Yelp and Foursquare API data:
-## Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquar
-## Yelp Vegetarian resturants returned 723 entries Vs Foursquare Vegetarina resturants returned 140
-## Yelp library numbers - 463 Vs Foursquare library numbers - 135
-## Results
+### 1) Connect to Foursquare API and yelp API to extract Data.
+### 2) For each of the bike stations in Toronto from Part 1, query both APIs to retrieve information for vegeratian restaurants and Libraries 
+### 3) Created a DataFrame for Yelp results and Foursquare results and store this in csv files. 
+####    YELP :https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/yelp.csv
+####    FOURSQUARE :https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/foursquare.csv
+### 4)Compared the quality of the Yelp and Foursquare API data:
+####    1) Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquar
+####    2) Yelp Vegetarian resturants returned 723 entries Vs Foursquare Vegetarina resturants returned 140
+####    3) Yelp library numbers - 463 Vs Foursquare library numbers - 135
+### 4)Results
 
 
 ## To 10 Vegetarian Restaurants From Yelp
