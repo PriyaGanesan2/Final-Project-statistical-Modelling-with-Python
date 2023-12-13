@@ -9,7 +9,7 @@
 
 
 ## Process
-### Part 1
+## Part 1
 ###Explore API Structure:
 ####Investigated the structure of the CityBikes API to understand its components.
 ####Executed queries to the API and analyzed the format of the returned data.
@@ -27,16 +27,16 @@ The completed notebook city_bikes.ipynb demonstrates the above steps
 
 
 
-### Part 2
-###Connect to Foursquare API and yelp API to extract Data.
+## Part 2
+## Connect to Foursquare API and yelp API to extract Data.
 
-###For each of the bike stations in Part 1, query both APIs to retrieve information for the indian restaurants of Toronto location.
+## For each of the bike stations in Part 1, query both APIs to retrieve information for the indian restaurants of Toronto location.
 
-###Created a DataFrame for the Yelp results and Foursquare results. Created csv files.
+## Created a DataFrame for the Yelp results and Foursquare results. Created csv files.
 
-###Compared the quality of the Yelp and Foursquare API data. Yelp API provided more complete data as mentioned in above steps.
+## Compared the quality of the Yelp and Foursquare API data. Yelp API provided more complete data as mentioned in above steps.
 
- ###Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquare.
+## Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquare.
 
 
 
