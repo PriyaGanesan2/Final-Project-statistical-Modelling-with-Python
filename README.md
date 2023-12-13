@@ -49,8 +49,8 @@ Foursquare Vegetarina resturants - 140
 Foursquare library - 135
 
 
-Top 10 Vegetarian Friendly Restaurants 
-Top 10 Libraries
+Top 10 Vegetarian Restaurants From Foursquare
+
 
 
 <div>
@@ -161,8 +161,7 @@ Top 10 Libraries
   </tbody>
 </table>
 </div>
-## Challenges 
-(discuss challenges you faced in the project)
+## Top 10 Libraries from Foursquare
 <div>
 
 <table border="1" class="dataframe">
@@ -274,6 +273,7 @@ Top 10 Libraries
 
 Yelp Vegetarian resturants- 723 entries
 Yelp library  - 463
+## To 10 Vegetarian Restaurants From Yelp
 <div>
 
 <table border="1" class="dataframe">
@@ -384,7 +384,7 @@ Yelp library  - 463
 </div>
 
 <div>
-
+## Top 10 Libraries from Yelp
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
