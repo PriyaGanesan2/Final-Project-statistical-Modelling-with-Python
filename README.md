@@ -503,7 +503,7 @@ Top 10 Vegetarian Restaurants From Foursquare
 
 1. Build a regression model using Python’s `statsmodels` module that demonstrates a relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.  
 2. Interpret results. Expand on the model output, and derive insights from your model.
-3. Mode Results as below :
+3. Model Results as below :
 ```
                             OLS Regression Results                            
 ==============================================================================
@@ -535,9 +535,38 @@ Notes:
 strong multicollinearity or other numerical problems.
 
 ```
+### Model Summary:
+    
+* Dependent Variable: free_bikes
+Coefficients:
+* const: Intercept or constant term in the regression equation. In this case, it is 16.1065.
+* distance: Coefficient for the 'distance' variable. Each unit increase in 'distance' is associated with a decrease of 0.0036 units in 'free_bikes'.
+* rating: Coefficient for the 'rating' variable. A higher rating is associated with a decrease in the predicted number of free bikes
+Statistical Significance:
+* t-statistic: Measures how many standard deviations the coefficient is from zero. Higher absolute values indicate more significant coefficients.
+    * P>|t| (p-value): The probability that the coefficient is not zero. If this value is less than the significance level (commonly 0.05), the coefficient is considered statistically significant.
+    * The 'distance' coefficient has a p-value close to zero, indicating it is statistically significant.
+Model Fit:
+* R-squared: R-squared is a measure of how well the chosen independent variables explain the changes in the dependent variable. A low R-squared, as seen in this model, suggests that there may be other factors not included in the model that contribute to the variation in the number of free bikes.
+F-statistic:
+## * The current model exhibits significant weaknesses in its ability to accurately predict bike availability
+
+
 
 4. Stretch: can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
-5. https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
-Complete the **model_building.ipynb** notebook to demonstrate how you executed the tasks above.
+   I was not very sure how to go about with this stretch activity and have taken help of chat GPT to understand how this can be approached. 
+   Define Classes:
+   Decide on a threshold value to categorize stations. For example, if the number of free bikes is above a certain threshold, classify as "High Availability," otherwise, classify as "Low Availability."
+   Create Categorical Labels:
+   Introduce a new categorical variable, say 'Availability Category,' where stations with free bikes above the threshold are labeled as "High" and others as "Low."
+   Data Transformation:
+   Update your dataset to include these new categories
+   Choose Classification Algorithm:
+    Select a classification algorithm suitable for your dataset and problem. Common choices include logistic regression, decision trees, or random forests.
+   
+6. Link for this :https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
+
 ## Future Goals
-(what would you do if you had more time?)
+1)Explore additional features that might better capture the relationships in the data. Additionally, interpreting the practical significance of coefficients and understanding the context of the problem a bit more in detail and come up with more a model that define the corelation between the variables and make meaningful statistical predications
+2) Try the above stretch activity
+
