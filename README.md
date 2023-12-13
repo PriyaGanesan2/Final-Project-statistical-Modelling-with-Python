@@ -31,11 +31,232 @@
     YELP : [Final-Project-statistical-Modelling-with-Python/yelp.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/yelp.csv)
     FOURSQUARE:https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/foursquare.csv
 
-## Compared the quality of the Yelp and Foursquare API data. 
-    Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquar
-
+## Compared the quality of the Yelp and Foursquare API data:
+## Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquar
+## Yelp Vegetarian resturants returned 723 entries Vs Foursquare Vegetarina resturants returned 140
+## Yelp library numbers - 463 Vs Foursquare library numbers - 135
 ## Results
 
+
+## To 10 Vegetarian Restaurants From Yelp
+<div>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>categories</th>
+      <th>rating</th>
+      <th>review</th>
+      <th>address</th>
+      <th>phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>277</th>
+      <td>Sunny Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td>40 Saint George Street, Room 6141, Toronto, ON...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1908</th>
+      <td>KaSpace Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>9</td>
+      <td>765 Queen Street E, Toronto, ON M4M 1H3, Canada</td>
+      <td>+16476579600</td>
+    </tr>
+    <tr>
+      <th>3350</th>
+      <td>KaSpace Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>9</td>
+      <td>1326 Gerrard Street  E, Toronto, ON M4L 1Z1, C...</td>
+      <td>+16476579600</td>
+    </tr>
+    <tr>
+      <th>1931</th>
+      <td>Sunny Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td>789 Yonge Street, Toronto, ON M4W 2G8, Canada</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>KaSpace Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>9</td>
+      <td>1432 Gerrard Street East, Toronto, ON M4L 1Z6,...</td>
+      <td>+16476579600</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>Sunny Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td>2 Bloor Street W, Toronto, ON M4W 3E2, Canada</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>Sunny Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td>10 Spadina Road, Toronto, ON M5R 2S7, Canada</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>KaSpace Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>9</td>
+      <td>Jones 118 Jones Ave, Toronto, ON M4M 2Z9, Canada</td>
+      <td>+16476579600</td>
+    </tr>
+    <tr>
+      <th>3031</th>
+      <td>Sunny Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td>55 Avenue Rd, Toronto, ON M5R 3L2, Canada</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>971</th>
+      <td>Sunny Cafe</td>
+      <td>Vegetarian</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td>322 Bloor Street W, Toronto, ON M5S 1W5, Canada</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div>
+## Top 10 Libraries from Yelp
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>categories</th>
+      <th>rating</th>
+      <th>review</th>
+      <th>address</th>
+      <th>phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1928</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>789 Yonge Street, Toronto, ON M4W 2G8, Canada</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>375</th>
+      <td>John M Kelly Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>1</td>
+      <td>113 St. Joseph Street, Toronto, ON M5S 3C2, Ca...</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>276</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>40 Saint George Street, Room 6141, Toronto, ON...</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>1889</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>Toronto Reference Library, 789 Yonge St, 2nd f...</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>10 King's College Road, Room 2402, Toronto, ON...</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>1243</th>
+      <td>John M Kelly Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>1</td>
+      <td>341 Yonge Street, Toronto, ON M5B 1S1, Canada</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1249</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>341 Yonge Street, Toronto, ON M5B 1S1, Canada</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>1700</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>118-92 King Street E, Toronto, ON M5C 2V8, Canada</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>15 King's College Cir, 2nd Fl, N Wing, Toronto...</td>
+      <td>+14169785851</td>
+    </tr>
+    <tr>
+      <th>3119</th>
+      <td>John W. Graham Library</td>
+      <td>Libraries</td>
+      <td>5.0</td>
+      <td>2</td>
+      <td>56 Wellesley St W, Toronto, ON M5S 2S3, Canada</td>
+      <td>+14169785851</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+Foursquare data :
 Foursquare Vegetarina resturants - 140
 Foursquare library - 135
 
@@ -261,227 +482,6 @@ Top 10 Vegetarian Restaurants From Foursquare
 </table>
 </div>
 
-Yelp Vegetarian resturants- 723 entries
-Yelp library  - 463
-## To 10 Vegetarian Restaurants From Yelp
-<div>
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>name</th>
-      <th>categories</th>
-      <th>rating</th>
-      <th>review</th>
-      <th>address</th>
-      <th>phone</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>277</th>
-      <td>Sunny Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>3</td>
-      <td>40 Saint George Street, Room 6141, Toronto, ON...</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>1908</th>
-      <td>KaSpace Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>9</td>
-      <td>765 Queen Street E, Toronto, ON M4M 1H3, Canada</td>
-      <td>+16476579600</td>
-    </tr>
-    <tr>
-      <th>3350</th>
-      <td>KaSpace Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>9</td>
-      <td>1326 Gerrard Street  E, Toronto, ON M4L 1Z1, C...</td>
-      <td>+16476579600</td>
-    </tr>
-    <tr>
-      <th>1931</th>
-      <td>Sunny Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>3</td>
-      <td>789 Yonge Street, Toronto, ON M4W 2G8, Canada</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>KaSpace Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>9</td>
-      <td>1432 Gerrard Street East, Toronto, ON M4L 1Z6,...</td>
-      <td>+16476579600</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>Sunny Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>3</td>
-      <td>2 Bloor Street W, Toronto, ON M4W 3E2, Canada</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>Sunny Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>3</td>
-      <td>10 Spadina Road, Toronto, ON M5R 2S7, Canada</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>198</th>
-      <td>KaSpace Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>9</td>
-      <td>Jones 118 Jones Ave, Toronto, ON M4M 2Z9, Canada</td>
-      <td>+16476579600</td>
-    </tr>
-    <tr>
-      <th>3031</th>
-      <td>Sunny Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>3</td>
-      <td>55 Avenue Rd, Toronto, ON M5R 3L2, Canada</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>971</th>
-      <td>Sunny Cafe</td>
-      <td>Vegetarian</td>
-      <td>5.0</td>
-      <td>3</td>
-      <td>322 Bloor Street W, Toronto, ON M5S 1W5, Canada</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div>
-## Top 10 Libraries from Yelp
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>name</th>
-      <th>categories</th>
-      <th>rating</th>
-      <th>review</th>
-      <th>address</th>
-      <th>phone</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1928</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>789 Yonge Street, Toronto, ON M4W 2G8, Canada</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>375</th>
-      <td>John M Kelly Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>1</td>
-      <td>113 St. Joseph Street, Toronto, ON M5S 3C2, Ca...</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>276</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>40 Saint George Street, Room 6141, Toronto, ON...</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>1889</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>Toronto Reference Library, 789 Yonge St, 2nd f...</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>10 King's College Road, Room 2402, Toronto, ON...</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>1243</th>
-      <td>John M Kelly Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>1</td>
-      <td>341 Yonge Street, Toronto, ON M5B 1S1, Canada</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>1249</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>341 Yonge Street, Toronto, ON M5B 1S1, Canada</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>1700</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>118-92 King Street E, Toronto, ON M5C 2V8, Canada</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>15 King's College Cir, 2nd Fl, N Wing, Toronto...</td>
-      <td>+14169785851</td>
-    </tr>
-    <tr>
-      <th>3119</th>
-      <td>John W. Graham Library</td>
-      <td>Libraries</td>
-      <td>5.0</td>
-      <td>2</td>
-      <td>56 Wellesley St W, Toronto, ON M5S 2S3, Canada</td>
-      <td>+14169785851</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 ## link demonstrating Part 3 : [Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb)
 
 ## Part 3: Joining Data
@@ -508,6 +508,8 @@ Yelp library  - 463
 
 1. Build a regression model using Python’s `statsmodels` module that demonstrates a relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.  
 2. Interpret results. Expand on the model output, and derive insights from your model.
+3. Mode Results as below :
+
                                OLS Regression Results                            
 ==============================================================================
 Dep. Variable:             free_bikes   R-squared:                       0.024
@@ -532,10 +534,7 @@ Skew:                           0.997   Prob(JB):                    4.41e-163
 Kurtosis:                       3.949   Cond. No.                     4.07e+03
 ==============================================================================
 
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 4.07e+03. This might indicate that there are
-strong multicollinearity or other numerical problems.
+
 
 4. Stretch: can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
 5. https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
