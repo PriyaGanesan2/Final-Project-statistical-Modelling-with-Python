@@ -537,7 +537,7 @@ strong multicollinearity or other numerical problems.
 ```
 ### Model Summary:
     
-### 1 )Dependent Variable: free_bikes
+### 1) Dependent Variable:free_bikes
 ### 2) Coefficients:
     * const: Intercept or constant term in the regression equation. In this case, it is 16.1065.
     * distance: Coefficient for the 'distance' variable. Each unit increase in 'distance' is associated with a decrease of 0.0036 units in 'free_bikes'.
