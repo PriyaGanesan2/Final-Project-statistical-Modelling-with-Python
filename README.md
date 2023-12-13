@@ -17,7 +17,7 @@
 ## 4)JSON Parsing into Pandas DataFrame:
 ### 1.Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
 ### 2. copy the result in a csv file : [Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv)
-### 3.Notebook Completion - city_bikes.ipynb: Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
+### 3.Notebook Completion - [city_bikes.ipynb: Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/67700abee009d9b81651f9aad6379b57959cb47a/Final-Project-statistical-Modelling-with-Python/city_bikes.ipynb)
 ## 5)Demonstrated the process of exploring the API, retrieving bike station data, extracting relevant information, and converting it into a Pandas dataframe.
 ## Link to the completed notebook demonstrates the above steps : https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
 
