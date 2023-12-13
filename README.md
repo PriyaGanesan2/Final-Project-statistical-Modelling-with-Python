@@ -509,8 +509,8 @@ Top 10 Vegetarian Restaurants From Foursquare
 1. Build a regression model using Python’s `statsmodels` module that demonstrates a relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.  
 2. Interpret results. Expand on the model output, and derive insights from your model.
 3. Mode Results as below :
-
-                               OLS Regression Results                            
+```
+                            OLS Regression Results                            
 ==============================================================================
 Dep. Variable:             free_bikes   R-squared:                       0.024
 Model:                            OLS   Adj. R-squared:                  0.023
@@ -534,7 +534,12 @@ Skew:                           0.997   Prob(JB):                    4.41e-163
 Kurtosis:                       3.949   Cond. No.                     4.07e+03
 ==============================================================================
 
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.07e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
 
+```
 
 4. Stretch: can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
 5. https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
