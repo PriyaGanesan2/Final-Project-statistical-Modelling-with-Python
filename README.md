@@ -7,20 +7,19 @@
 ## Process
 ## Part 1
 ## 1)Explore API Structure:
-    1.Investigated the structure of the CityBikes API to understand its components.
-    2.Executed queries to the API and analyzed the format of the returned data.
+### 1.Investigated the structure of the CityBikes API to understand its components.
+### 2.Executed queries to the API and analyzed the format of the returned data.
 ## 2)City Selection and Bike Station Retrieval:
-    1.Selected a specific city covered by the CityBikes API to focus on.
-    2.Retrieved information on all available bike stations within the chosen city using the API.
+### 1.Selected a specific city covered by the CityBikes API to focus on.
+### 2.Retrieved information on all available bike stations within the chosen city using the API.
 ## 3)Data Extraction for Each Bike Station:
-    For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
+### For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
 ## 4)JSON Parsing into Pandas DataFrame:
-    1.Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
-    2. copy the result in a csv file : Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv
-    3.Notebook Completion - city_bikes.ipynb: Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
+### 1.Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
+### 2. copy the result in a csv file : [Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv)
+### 3.Notebook Completion - city_bikes.ipynb: Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
 ## 5)Demonstrated the process of exploring the API, retrieving bike station data, extracting relevant information, and converting it into a Pandas dataframe.
-## Link to the completed notebook demonstrates the above steps : Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
-
+## Link to the completed notebook demonstrates the above steps : https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
 
 
 ## Part 2
@@ -29,8 +28,8 @@
 ## For each of the bike stations in Toronto from Part 1, query both APIs to retrieve information for vegeratian restaurants and Libraries 
 
 ## Created a DataFrame for Yelp results and Foursquare results and store this in csv files. 
-    YELP : Final-Project-statistical-Modelling-with-Python/yelp.csv
-    FOURSQUARE:Final-Project-statistical-Modelling-with-Python/foursquare.csv
+    YELP : [Final-Project-statistical-Modelling-with-Python/yelp.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/yelp.csv)
+    FOURSQUARE:https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/foursquare.csv
 
 ## Compared the quality of the Yelp and Foursquare API data. 
     Yelp provides a greater coverage in terms of the number of poi fetched for vegeratian restaurants and libraries in Toronto compared to Foursquar
@@ -483,19 +482,63 @@ Yelp library  - 463
 </table>
 </div>
 
+## link demonstrating Part 3 : [Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb)
+
 ## Part 3: Joining Data
 
 1. Joined the data from Part 1 with the data from Part 2 to create a new dataframe. 
-2. Use data visualization to explore the data. 
+2. EDA:
+    1.describe the data frames to undesrtand its structure, display top few records to understand the data, remove duplicates and then consider requires columns and create a new data frame for further analysis
+    2.Use data visualization to explore the data.
+   ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/6b8ab64d-47a8-489b-9fae-f4f252b1d9c5)
+   ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/522eb434-8ba2-4d81-af45-27af31692144)
+   ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/2a88d7f8-85de-4168-b864-5929bfcf4b03)
+   ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/dfc1ecf0-51a8-4b2c-a03d-531f407ab385)
+   ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/4bf5630f-b575-46bf-8778-11ba8bb4a99d)
+   3.Explore the data.
+        1)The correlation coefficient is -0.13251182646351062, close to 0 but negative - indicating a weak negative correlation. This means that as the 'distance' increases, there is a tendency for the 'free_bikes' to               decrease slightly, and as the 'distance' decreases, there is a tendency for the 'free_bikes' to increase slightly. However, the relationship is not very strong based on the absolute value of the correlation                coefficient.
+          2) Null Hypothesis True. There is no significant difference in mean ratings
+      
+
 3. Create  SQLite database and store the data you've collected on the POIs.
-Validate your data.
+4. Validate your data before and after merge
+5. Link to demonstrate pART 3: [Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb)
 
 ## Part 4: Building a Model
 
 1. Build a regression model using Python’s `statsmodels` module that demonstrates a relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.  
 2. Interpret results. Expand on the model output, and derive insights from your model.
-3. Stretch: can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
+                               OLS Regression Results                            
+==============================================================================
+Dep. Variable:             free_bikes   R-squared:                       0.024
+Model:                            OLS   Adj. R-squared:                  0.023
+Method:                 Least Squares   F-statistic:                     45.04
+Date:                Tue, 12 Dec 2023   Prob (F-statistic):           4.74e-20
+Time:                        20:39:53   Log-Likelihood:                -13042.
+No. Observations:                3677   AIC:                         2.609e+04
+Df Residuals:                    3674   BIC:                         2.611e+04
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         14.9342      0.708     21.079      0.000      13.545      16.323
+distance      -0.0036      0.000     -7.865      0.000      -0.004      -0.003
+rating        -0.8789      0.179     -4.897      0.000      -1.231      -0.527
+==============================================================================
+Omnibus:                      503.206   Durbin-Watson:                   0.219
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              747.675
+Skew:                           0.997   Prob(JB):                    4.41e-163
+Kurtosis:                       3.949   Cond. No.                     4.07e+03
+==============================================================================
 
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.07e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+4. Stretch: can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
+5. https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
 Complete the **model_building.ipynb** notebook to demonstrate how you executed the tasks above.
 ## Future Goals
 (what would you do if you had more time?)
