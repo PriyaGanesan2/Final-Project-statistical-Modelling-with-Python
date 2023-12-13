@@ -1,7 +1,7 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-### The objective of this project is to create a statistical model using Python. This involves fetching data from City Bikes, Foursquare, and Yelp APIs. A decision is made to choose data from either Yelp or Foursquare, depending on its suitability for a specific point of interest. For City Bikes, the bike station locations are focused on Toronto. The chosen data pertains to vegetarian restaurants and libraries around Toronto, gathered from Yelp. The collected information from City Bikes and Yelp is then combined.
+### The objective of this project is to create a statistical model using Python. This involves fetching data from City Bikes, Foursquare, and Yelp APIs. A decision is made to choose data from either Yelp or Foursquare, depending on its suitability for a specific point of interest. For City Bikes, the bike station locations are in Toronto. The chosen point of interest data pertains to vegetarian restaurants and libraries around Toronto, gathered from Yelp. The collected information from City Bikes and Yelp is then combined.
 ## The subsequent Exploratory Data Analysis (EDA) phase encompasses visually exploring, cleaning, and preparing the data, in addition to conducting hypothesis testing. The ultimate goal of the project is to construct a statistical model that can analyze relationships and make predictions. The emphasis is particularly on understanding the impact of independent variables on the dependent variable.
 
 ## Process
