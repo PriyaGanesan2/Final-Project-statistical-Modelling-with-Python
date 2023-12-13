@@ -539,29 +539,32 @@ strong multicollinearity or other numerical problems.
     
 ### 1) Dependent Variable:free_bikes
 ### 2) Coefficients:
-    * const: Intercept or constant term in the regression equation. In this case, it is 16.1065.
-    * distance: Coefficient for the 'distance' variable. Each unit increase in 'distance' is associated with a decrease of 0.0036 units in 'free_bikes'.
-    * rating: Coefficient for the 'rating' variable. A higher rating is associated with a decrease in the predicted number of free bikes
+###    * const: Intercept or constant term in the regression equation. In this case, it is 16.1065.
+###    * distance: Coefficient for the 'distance' variable. Each unit increase in 'distance' is associated with a decrease of 0.0036 units in 'free_bikes'.
+###    * rating: Coefficient for the 'rating' variable. A higher rating is associated with a decrease in the predicted number of free bikes
 ### 3) Statistical Significance:
-    * t-statistic: Measures how many standard deviations the coefficient is from zero. Higher absolute values indicate more significant coefficients.
-    * P>|t| (p-value): The probability that the coefficient is not zero. If this value is less than the significance level (commonly 0.05), the coefficient is considered statistically significant.
-    * The 'distance' coefficient has a p-value close to zero, indicating it is statistically significant.
+###    * t-statistic: Measures how many standard deviations the coefficient is from zero. Higher absolute values indicate more significant coefficients.
+###    * P>|t| (p-value): The probability that the coefficient is not zero. If this value is less than the significance level (commonly 0.05), the coefficient is considered statistically significant.
+###    * The 'distance' coefficient has a p-value close to zero, indicating it is statistically significant.
 ### 4) Model Fit:
-    * R-squared: R-squared is a measure of how well the chosen independent variables explain the changes in the dependent variable. A low R-squared, as seen in this model, suggests that there may be other factors not included in the model that contribute to the variation in the number of free bikes.
-    F-statistic:
+###    * R-squared: R-squared is a measure of how well the chosen independent variables explain the changes in the dependent variable. A low R-squared, as seen in this model, suggests that there may be other factors not 
+###        included in the model that contribute to the variation in the number of free bikes.
+###    * F-statistic:
 ### 5) The current model exhibits significant weaknesses in its ability to accurately predict bike availability
+### 6) Link for this activity: https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
 
 
 
-### Part 4. Stretch: can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
-     Decide on a threshold value Create Categorical Labels:
-     Introduce a new categorical variable, say 'Availability Category,' where stations with free bikes above the threshold are labeled as "High" and others as "Low."
-     Update your dataset to include these new categories
-    Select a classification algorithm suitable for your dataset and problem. Common choices include logistic regression, decision trees, or random forests.
+## PART 5: Stretch: 
+### can you think of a way to turn the above regression problem into a classification one? Without coding, can you sketch out how you would cast the problem specifically, and lay out your approaches?
+####    1)Decide on a threshold value Create Categorical Labels:
+####    2)Introduce a new categorical variable, say 'Availability Category,' where stations with free bikes above the threshold are labeled as "High" and others as "Low."
+####    3)Update your dataset to include these new categories
+####    4)Select a classification algorithm suitable for your dataset and problem. Common choices include logistic regression, decision trees, or random forests.
    
-6. Link for this :https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
+
 
 ## Future Goals
-1)Explore additional features that might better capture the relationships in the data. Additionally, interpreting the practical significance of coefficients and understanding the context of the problem a bit more in detail and come up with more a model that define the corelation between the variables and make meaningful statistical predications
-2) Try the above stretch activity
+### 1)Explore additional features that might better capture the relationships in the data. Additionally, interpreting the practical significance of coefficients and understanding the context of the problem a bit more in detail and come up with more a model that define the corelation between the variables and make meaningful statistical predications
+### 2) Try the above stretch activity
 
