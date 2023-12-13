@@ -9,7 +9,7 @@
 
 
 ## Process
-### (your step 1)
+### Part 1
 ###Explore API Structure:
 ####Investigated the structure of the CityBikes API to understand its components.
 ####Executed queries to the API and analyzed the format of the returned data.
@@ -27,7 +27,7 @@ The completed notebook city_bikes.ipynb demonstrates the above steps
 
 
 
-### (your step 2)
+### Part 2
 ###Connect to Foursquare API and yelp API to extract Data.
 
 ###For each of the bike stations in Part 1, query both APIs to retrieve information for the indian restaurants of Toronto location.
