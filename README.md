@@ -10,19 +10,19 @@
 
 ## Process
 ## Part 1
-###Explore API Structure:
-####Investigated the structure of the CityBikes API to understand its components.
-####Executed queries to the API and analyzed the format of the returned data.
-###City Selection and Bike Station Retrieval:
-####Selected a specific city covered by the CityBikes API to focus on.
-####Retrieved information on all available bike stations within the chosen city using the API.
-###Data Extraction for Each Bike Station:
-####For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
-###JSON Parsing into Pandas DataFrame:
-####Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
-###Notebook Completion - city_bikes.ipynb:
-####Completed the Jupyter notebook named city_bikes.ipynb to showcase the step-by-step execution of the tasks mentioned above.
-####Demonstrated the process of exploring the API, retrieving bike station data, extracting relevant information, and converting it into a Pandas dataframe.
+## Explore API Structure:
+## Investigated the structure of the CityBikes API to understand its components.
+## Executed queries to the API and analyzed the format of the returned data.
+## City Selection and Bike Station Retrieval:
+## Selected a specific city covered by the CityBikes API to focus on.
+## Retrieved information on all available bike stations within the chosen city using the API.
+## Data Extraction for Each Bike Station:
+## For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
+## JSON Parsing into Pandas DataFrame:
+## Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
+## Notebook Completion - city_bikes.ipynb:
+## Completed the Jupyter notebook named city_bikes.ipynb to showcase the step-by-step execution of the tasks mentioned above.
+## Demonstrated the process of exploring the API, retrieving bike station data, extracting relevant information, and converting it into a Pandas dataframe.
 The completed notebook city_bikes.ipynb demonstrates the above steps
 
 
@@ -54,19 +54,7 @@ Top 10 Libraries
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -176,19 +164,7 @@ Top 10 Libraries
 ## Challenges 
 (discuss challenges you faced in the project)
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -299,19 +275,7 @@ Top 10 Libraries
 Yelp Vegetarian resturants- 723 entries
 Yelp library  - 463
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -420,19 +384,7 @@ Yelp library  - 463
 </div>
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
