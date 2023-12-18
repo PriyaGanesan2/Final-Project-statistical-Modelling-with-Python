@@ -533,25 +533,24 @@ Top 10 Vegetarian Restaurants From Foursquare
   </tbody>
 </table>
 </div>
-### 3. Display heat map to show the corelation
-<div>
-![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/f61839be-6371-4a09-8ac0-26be088cfd44)
-</div>
 
-3.Use data visualization to explore the data.
+### 3. Display heat map to show the corelation: shows negative corelation between free bikes and review , free bikes and distance, free bikes and rating. The corelation shows a weak negative corelation.
+![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/7ff1616b-8cac-43cc-b20b-147611ac9700)
+
+4.Use data visualization to explore the data.
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/6b8ab64d-47a8-489b-9fae-f4f252b1d9c5)
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/522eb434-8ba2-4d81-af45-27af31692144)
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/2a88d7f8-85de-4168-b864-5929bfcf4b03)
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/dfc1ecf0-51a8-4b2c-a03d-531f407ab385)
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/4bf5630f-b575-46bf-8778-11ba8bb4a99d)
-   3.Explore the data.
+   5.Explore the data.
         1)The correlation coefficient is -0.13251182646351062, close to 0 but negative - indicating a weak negative correlation. This means that as the 'distance' increases, there is a tendency for the 'free_bikes' to               decrease slightly, and as the 'distance' decreases, there is a tendency for the 'free_bikes' to increase slightly. However, the relationship is not very strong based on the absolute value of the correlation                coefficient.
-          2) Null Hypothesis True. There is no significant difference in mean ratings
+          
       
 
-4. Create  SQLite database and store the data you've collected on the POIs.
-5. Validate your data before and after merge
-6. Link to demonstrate pART 3: [Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb)
+6. Create  SQLite database and store the data you've collected on the POIs.
+7. Validate your data before and after merge
+8. Link to demonstrate pART 3: [Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb)
 
 ## Part 4: Building a Model
 
