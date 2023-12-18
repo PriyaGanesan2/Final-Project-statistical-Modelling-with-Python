@@ -477,119 +477,9 @@ Top 10 Vegetarian Restaurants From Foursquare
 </table>
 </div>
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>review</th>
-      <th>rating</th>
-      <th>distance</th>
-      <th>free_bikes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>review</th>
-      <td>1.000000</td>
-      <td>0.237216</td>
-      <td>0.061891</td>
-      <td>-0.057693</td>
-    </tr>
-    <tr>
-      <th>rating</th>
-      <td>0.237216</td>
-      <td>1.000000</td>
-      <td>0.065995</td>
-      <td>-0.072662</td>
-    </tr>
-    <tr>
-      <th>distance</th>
-      <td>0.061891</td>
-      <td>0.065995</td>
-      <td>1.000000</td>
-      <td>-0.150368</td>
-    </tr>
-    <tr>
-      <th>free_bikes</th>
-      <td>-0.057693</td>
-      <td>-0.072662</td>
-      <td>-0.150368</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>review</th>
-      <th>rating</th>
-      <th>distance</th>
-      <th>free_bikes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>review</th>
-      <td>1.000000</td>
-      <td>0.237216</td>
-      <td>0.061891</td>
-      <td>-0.057693</td>
-    </tr>
-    <tr>
-      <th>rating</th>
-      <td>0.237216</td>
-      <td>1.000000</td>
-      <td>0.065995</td>
-      <td>-0.072662</td>
-    </tr>
-    <tr>
-      <th>distance</th>
-      <td>0.061891</td>
-      <td>0.065995</td>
-      <td>1.000000</td>
-      <td>-0.150368</td>
-    </tr>
-    <tr>
-      <th>free_bikes</th>
-      <td>-0.057693</td>
-      <td>-0.072662</td>
-      <td>-0.150368</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 ## link demonstrating Part 3 : [Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb)
 
@@ -597,8 +487,58 @@ Top 10 Vegetarian Restaurants From Foursquare
 
 1. Joined the data from Part 1 with the data from Part 2 to create a new dataframe. 
 2. EDA:
-    1.describe the data frames to undesrtand its structure, display top few records to understand the data, remove duplicates and then consider requires columns and create a new data frame for further analysis
-    2.Use data visualization to explore the data.
+### 1.describe the data frames to undesrtand its structure, display top few records to understand the data, remove duplicates and then consider requires columns and create a new data frame for further analysis 
+### 2.calculare and display the corelation between variables
+
+<div>      
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>review</th>
+      <th>rating</th>
+      <th>distance</th>
+      <th>free_bikes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>review</th>
+      <td>1.000000</td>
+      <td>0.237216</td>
+      <td>0.061891</td>
+      <td>-0.057693</td>
+    </tr>
+    <tr>
+      <th>rating</th>
+      <td>0.237216</td>
+      <td>1.000000</td>
+      <td>0.065995</td>
+      <td>-0.072662</td>
+    </tr>
+    <tr>
+      <th>distance</th>
+      <td>0.061891</td>
+      <td>0.065995</td>
+      <td>1.000000</td>
+      <td>-0.150368</td>
+    </tr>
+    <tr>
+      <th>free_bikes</th>
+      <td>-0.057693</td>
+      <td>-0.072662</td>
+      <td>-0.150368</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+### 3. Display heat map to show the corelation
+<div>
+![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/f61839be-6371-4a09-8ac0-26be088cfd44)
+</div>
+
+3.Use data visualization to explore the data.
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/6b8ab64d-47a8-489b-9fae-f4f252b1d9c5)
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/522eb434-8ba2-4d81-af45-27af31692144)
    ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/2a88d7f8-85de-4168-b864-5929bfcf4b03)
@@ -609,9 +549,9 @@ Top 10 Vegetarian Restaurants From Foursquare
           2) Null Hypothesis True. There is no significant difference in mean ratings
       
 
-3. Create  SQLite database and store the data you've collected on the POIs.
-4. Validate your data before and after merge
-5. Link to demonstrate pART 3: [Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb)
+4. Create  SQLite database and store the data you've collected on the POIs.
+5. Validate your data before and after merge
+6. Link to demonstrate pART 3: [Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/joining_data.ipynb)
 
 ## Part 4: Building a Model
 
