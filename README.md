@@ -477,6 +477,120 @@ Top 10 Vegetarian Restaurants From Foursquare
 </table>
 </div>
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>review</th>
+      <th>rating</th>
+      <th>distance</th>
+      <th>free_bikes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>review</th>
+      <td>1.000000</td>
+      <td>0.237216</td>
+      <td>0.061891</td>
+      <td>-0.057693</td>
+    </tr>
+    <tr>
+      <th>rating</th>
+      <td>0.237216</td>
+      <td>1.000000</td>
+      <td>0.065995</td>
+      <td>-0.072662</td>
+    </tr>
+    <tr>
+      <th>distance</th>
+      <td>0.061891</td>
+      <td>0.065995</td>
+      <td>1.000000</td>
+      <td>-0.150368</td>
+    </tr>
+    <tr>
+      <th>free_bikes</th>
+      <td>-0.057693</td>
+      <td>-0.072662</td>
+      <td>-0.150368</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>review</th>
+      <th>rating</th>
+      <th>distance</th>
+      <th>free_bikes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>review</th>
+      <td>1.000000</td>
+      <td>0.237216</td>
+      <td>0.061891</td>
+      <td>-0.057693</td>
+    </tr>
+    <tr>
+      <th>rating</th>
+      <td>0.237216</td>
+      <td>1.000000</td>
+      <td>0.065995</td>
+      <td>-0.072662</td>
+    </tr>
+    <tr>
+      <th>distance</th>
+      <td>0.061891</td>
+      <td>0.065995</td>
+      <td>1.000000</td>
+      <td>-0.150368</td>
+    </tr>
+    <tr>
+      <th>free_bikes</th>
+      <td>-0.057693</td>
+      <td>-0.072662</td>
+      <td>-0.150368</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 ## link demonstrating Part 3 : [Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/yelp_foursquare_EDA.ipynb)
 
 ## Part 3: Joining Data
@@ -539,18 +653,14 @@ strong multicollinearity or other numerical problems.
     
 ### 1) Dependent Variable:free_bikes
 ### 2) Coefficients:
-###    * const: Intercept or constant term in the regression equation. In this case, it is 16.1065.
-###    * distance: Coefficient for the 'distance' variable. Each unit increase in 'distance' is associated with a decrease of 0.0036 units in 'free_bikes'.
-###    * rating: Coefficient for the 'rating' variable. A higher rating is associated with a decrease in the predicted number of free bikes
+###    *distance has a coef of -0.0036  and rating has a coef of -0.8789 
+###    *distance: 'distance' is measured in meters, the negative coefficient suggests that as the distance from a location increases by one meter, the model predicts a small decrease in the number of free bikes. 
+###    *rating:rating has a coef of -0.8789 indicatig negative relation.locations with higher ratings tend to have fewer free bikes.
 ### 3) Statistical Significance:
-###    * t-statistic: Measures how many standard deviations the coefficient is from zero. Higher absolute values indicate more significant coefficients.
-###    * P>|t| (p-value): The probability that the coefficient is not zero. If this value is less than the significance level (commonly 0.05), the coefficient is considered statistically significant.
-###    * The 'distance' coefficient has a p-value close to zero, indicating it is statistically significant.
+###    * P>|t| (p-value): All p values are 0 and less than 0.05. This indicates that we can reject null hypothesis and there is correlation between free bikes and distance and rating
 ### 4) Model Fit:
-###    * R-squared: R-squared is a measure of how well the chosen independent variables explain the changes in the dependent variable. A low R-squared, as seen in this model, suggests that there may be other factors not 
-###        included in the model that contribute to the variation in the number of free bikes.
-###    * F-statistic:
-### 5) The current model exhibits significant weaknesses in its ability to accurately predict bike availability
+###    * R-squared: R-squared is 0.024 and Adj. R-squared is 0.023.Our model explains 2.3% of the variations in the data.R-squared is a measure of how well the chosen independent variables explain the changes in the dependent variable. A low R-squared, can be  seen in this model.    
+### 5) The current model exhibits significant weaknesses in its ability to accurately predict bike availability.In this case, the model suggests that, on average, locations with higher ratings tend to have fewer free bikes, but it doesn't provide information about the underlying reasons for this relationship. Additional analysis and domain knowledge may be necessary to understand the implications of the observed relationships in this specific dataset.
 ### 6) Link for this activity: https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
 
 
