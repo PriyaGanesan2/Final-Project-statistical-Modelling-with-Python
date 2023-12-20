@@ -1,23 +1,25 @@
 ## Final-Project-Statistical-Modelling-with-Python
 
-## 1.Project/Goals
-### The objective of this project is to create a statistical model using Python. This involves fetching data from City Bikes, Foursquare, and Yelp APIs. A decision is made to choose data from either Yelp or Foursquare, depending on its suitability for a specific point of interest. For City Bikes, the bike station locations are in Toronto. The chosen point of interest data pertains to vegetarian restaurants and libraries around Toronto, gathered from Yelp. The collected information from City Bikes and Yelp is then combined.
-#### The subsequent Exploratory Data Analysis (EDA) phase encompasses visually exploring, cleaning, and preparing the data, in addition to conducting hypothesis testing. The ultimate goal of the project is to construct a statistical model that can analyze relationships and make predictions. The emphasis is particularly on understanding the impact of independent variables on the dependent variable.
+## 1.Project/Goals  
+  The objective of this project is to create a statistical model using Python. This involves fetching data from City Bikes, Foursquare, and Yelp APIs. A decision is made to choose data from either Yelp or Foursquare, depending on its suitability for a specific point of interest. For City Bikes, the bike station locations are in Toronto. The chosen point of interest data pertains to vegetarian restaurants and libraries around Toronto, gathered from Yelp. The collected information from City Bikes and Yelp is then combined.
+  The subsequent Exploratory Data Analysis (EDA) phase encompasses visually exploring, cleaning, and preparing the data, in addition to conducting hypothesis testing. The ultimate goal of the project is to construct a statistical model that can analyze relationships and make predictions. The emphasis is particularly on understanding the impact of independent variables on the dependent variable.
 
 ## 2.Process
 ## Part 1
-### 1)Explore API Structure:
-###    Investigated the structure of the CityBikes API to understand its components.
-###    Executed queries to the API and analyzed the format of the returned data.
+### 1)Explore API Structure:  
+  Investigated the structure of the CityBikes API to understand its components.                              
+  Executed queries to the API and analyzed the format of the returned data.
 ### 2)City Selection and Bike Station Retrieval:
-###     Selected a specific city covered by the CityBikes API to focus on.
-###     Retrieved information on all available bike stations within the chosen city using the API.
-###     Data Extraction for Each Bike Station:
-###     For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
+  Selected a specific city covered by the CityBikes API to focus on.                      
+  Retrieved information on all available bike stations within the chosen city using the API.                        
+  Data Extraction for Each Bike Station:                      
+  For each bike station identified, utilized the API to extract relevant details such as latitude, longitude, and the number of available bikes.
 ### 3)JSON Parsing into Pandas DataFrame:
-###    Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.
-###    copy the result in a csv file : [Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-
-### 4)Link to the completed notebook demonstrates the above steps : https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
+  Parsed the JSON objects obtained from the API into a structured Pandas dataframe for ease of analysis and manipulation.              
+  copy the result in a csv file :     
+    [Final-Project-statistical-Modelling-with-Python/bike_info_csv.csv](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-
+### 4)Link to the completed notebook demonstrates the above steps : 
+  https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/3d62d049aa60aa69901805a1c706a45a50d34aab/Final-Project-statistical-Modelling-with-Python/notebooks/city_bikes.ipynb
 
 
 ## Part 2
@@ -534,7 +536,9 @@ Top 10 Vegetarian Restaurants From Foursquare
 </table>
 </div>
 
-### 3. Display heat map to show the corelation: shows negative corelation between free bikes and review , free bikes and distance, free bikes and rating. The corelation shows a weak negative corelation.
+### 3. Display Heat map to show the corelation:  
+  Heat map shows a weak negative correlation between free bikes and review , free bikes and distance, free bikes and rating. 
+
 ![image](https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/assets/110922792/7ff1616b-8cac-43cc-b20b-147611ac9700)
 
 4.Use data visualization to explore the data.
@@ -555,8 +559,7 @@ Top 10 Vegetarian Restaurants From Foursquare
 ## Part 4: Building a Model
 
 1. Build a regression model using Python’s `statsmodels` module that demonstrates a relationship between the number of bikes in a particular location and the characteristics of the POIs in that location.  
-2. Interpret results. Expand on the model output, and derive insights from your model.
-3. Model Results as below :
+2. Model Results as below :
 ```
                             OLS Regression Results                            
 ==============================================================================
@@ -588,19 +591,19 @@ Notes:
 strong multicollinearity or other numerical problems.
 
 ```
-### Model Summary:
-    
-### 1) Dependent Variable:free_bikes
-### 2) Coefficients:
-###    *distance has a coef of -0.0036  and rating has a coef of -0.8789 
-###    *distance: 'distance' is measured in meters, the negative coefficient suggests that as the distance from a location increases by one meter, the model predicts a small decrease in the number of free bikes. 
-###    *rating:rating has a coef of -0.8789 indicatig negative relation.locations with higher ratings tend to have fewer free bikes.
-### 3) Statistical Significance:
-###    * P>|t| (p-value): All p values are 0 and less than 0.05. This indicates that we can reject null hypothesis and there is correlation between free bikes and distance and rating
-### 4) Model Fit:
-###    * R-squared: R-squared is 0.024 and Adj. R-squared is 0.023.Our model explains 2.3% of the variations in the data.R-squared is a measure of how well the chosen independent variables explain the changes in the dependent variable. A low R-squared, can be  seen in this model.    
-### 5) The current model exhibits significant weaknesses in its ability to accurately predict bike availability.In this case, the model suggests that, on average, locations with higher ratings tend to have fewer free bikes, but it doesn't provide information about the underlying reasons for this relationship. Additional analysis and domain knowledge may be necessary to understand the implications of the observed relationships in this specific dataset.
-### 6) Link for this activity: https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
+### 1)Dependent Variable:
+  The variable we are trying to predict is the available number of free bikes.
+### 2)Coefficients:
+  Distance: With a coefficient of -0.0036, indicating that for each extra meter from a location, the model predicts a slight decrease in available bikes. From a business perspective, this suggests that as distance increases, there is a slight decline in bike availability.            
+  Rating: A coefficient of -0.8789 indicates a negative relationship. In practical terms, locations with higher ratings tend to have fewer free bikes. This could be interpreted as higher-rated locations being more popular, leading to higher demand for bikes  
+### 3)Statistical Significance:                           
+  The p-values being close to zero (< 0.05) for both 'distance' and 'rating' indicate that there is a statistically significant correlation between these variables and the number of free bikes. From a business standpoint, this reinforces the importance of both distance and location ratings in predicting bike availability.
+### 4)Model Fit:         
+  The R-squared value of 0.024 suggests that the model explains only 2.3% of the variations in the data. While the model provides some insights, there are unaccounted factors influencing bike availability. For business decisions, it's essential to recognize the limitations of the model and consider additional variables or external factors.
+### 5)Summary,
+  While the model identifies correlation between distance, rating and bike availability, it has limitations in accurately predicting bike availability. Additional insights and context are crucial for making well-informed business decisions.
+### 6) Link for this activity:  
+  https://github.com/PriyaGanesan2/Final-Project-statistical-Modelling-with-Python/blob/60bbaeff0219cfcc4c7c5d1eaea6ef7b7721e3b8/Final-Project-statistical-Modelling-with-Python/notebooks/model_building.ipynb
 
 
 
